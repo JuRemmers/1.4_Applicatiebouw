@@ -11,5 +11,10 @@ namespace DAL.DAO
     {
         protected SqlConnection conn;
         protected DBconnection dbconn;
+
+        public MedewerkerDAO()
+        {
+            conn = dbconn.GetConnection();
+        }
     }
 }
