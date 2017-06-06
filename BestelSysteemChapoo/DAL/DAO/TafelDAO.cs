@@ -18,8 +18,8 @@ namespace DAL.DAO
 
         public TafelDAO()
         {
-            conn = dbconn.GetConnection();
-
+            dbconn = new DBconnection();
+            conn = dbconn.GetConnection();            
         }
 
         public Tafel ReadTafel(SqlDataReader reader)
