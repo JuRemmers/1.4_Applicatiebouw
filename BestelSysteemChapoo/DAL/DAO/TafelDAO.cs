@@ -94,16 +94,5 @@ namespace DAL.DAO
             return bezet;
         }
 
-        public string ChangeBezet()
-        {
-            SqlCommand command = new SqlCommand("");
-        }
-    //class TafelDAO
-        // protected SqlConnection conn;
-        // protected DBconnection dbconn;
-
-        // public TafelDAO()
-        // {
-        //    conn = dbconn.GetConnection();
-        // }
+    }
 }
