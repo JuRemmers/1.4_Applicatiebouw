@@ -18,5 +18,34 @@ namespace DAL.DAO
             conn = dbconn.GetConnection();
         }
 
+        public void GetAll()
+        {
+
+        }
+
+        public void GetAllForBetaald()
+        {
+
+        }
+
+        public void GetForTafelId()
+        {
+
+        }
+
+        public void GetForId()
+        {
+
+        }
+
+        public void GetForDatum()
+        {
+
+        }
+
+        public void GetForMedewerkerId()
+        {
+
+        }
     }
 }
