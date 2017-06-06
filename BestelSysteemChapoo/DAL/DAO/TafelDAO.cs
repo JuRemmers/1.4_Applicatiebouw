@@ -83,8 +83,7 @@ namespace DAL.DAO
 
             }
         }
-    class TafelDAO
-    {
+    //class TafelDAO
         // protected SqlConnection conn;
         // protected DBconnection dbconn;
 
@@ -92,5 +91,4 @@ namespace DAL.DAO
         // {
         //    conn = dbconn.GetConnection();
         // }
-    }
 }
