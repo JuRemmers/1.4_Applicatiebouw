@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LoginScherm
 {
-    public partial class TafelOverzicht : Form
+    public partial class Jesseiscool : Form
     {
-        public TafelOverzicht()
+        public Jesseiscool()
         {
             InitializeComponent();
         }
