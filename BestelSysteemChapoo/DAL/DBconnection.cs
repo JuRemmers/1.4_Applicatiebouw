@@ -8,6 +8,7 @@ using System.Data.SqlClient;
 using System.Data.SqlTypes;
 using System.Configuration;
 
+// Gemaakt door Kayleigh
 namespace DAL
 {
     class DBconnection
@@ -15,6 +16,7 @@ namespace DAL
         // Database connectie wordt geïnitialiseerd
         SqlConnection conn;
 
+        // Constructor
         public DBconnection()
         {
             string connString = ConfigurationManager
