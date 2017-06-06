@@ -14,7 +14,7 @@ namespace DAL
     class DBconnection
     {
         // Database connectie wordt geïnitialiseerd
-        SqlConnection conn;
+        protected SqlConnection conn;
 
         // Constructor
         public DBconnection()
@@ -26,6 +26,11 @@ namespace DAL
             // Database connectie wordt gelegd
             conn = new SqlConnection(connString);
 
+        }
+
+        public SqlConnection GetConnection()
+        {
+            return conn;
         }
     }
 }
