@@ -8,5 +8,7 @@ namespace DAL.DAO
 {
     class MenuItemDAO
     {
+        protected SqlConnection conn;
+        protected DBconnection dbconn;
     }
 }

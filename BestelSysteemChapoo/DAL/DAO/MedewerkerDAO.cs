@@ -8,6 +8,7 @@ namespace DAL.DAO
 {
     class MedewerkerDAO
     {
-
+        protected SqlConnection conn;
+        protected DBconnection dbconn;
     }
 }
