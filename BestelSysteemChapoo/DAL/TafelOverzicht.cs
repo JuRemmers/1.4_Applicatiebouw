@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace LoginScherm
+namespace DAL
 {
     public partial class TafelOverzicht : Form
     {

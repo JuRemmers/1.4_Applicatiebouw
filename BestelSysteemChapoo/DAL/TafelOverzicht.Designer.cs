@@ -1,4 +1,4 @@
-﻿namespace LoginScherm
+﻿namespace DAL
 {
     partial class TafelOverzicht
     {
