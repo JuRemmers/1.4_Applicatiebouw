@@ -44,14 +44,11 @@
             this.btn_keuken_meldingen = new System.Windows.Forms.Button();
             this.btn_bar_meldingen = new System.Windows.Forms.Button();
             this.tp_bestelling_maken = new System.Windows.Forms.TabPage();
-            this.btn_bekijk_bestelling = new System.Windows.Forms.Button();
-            this.btn_diner = new System.Windows.Forms.Button();
-            this.btn_dranken = new System.Windows.Forms.Button();
-            this.btn_lunch = new System.Windows.Forms.Button();
             this.tp_huidige_bestellingen = new System.Windows.Forms.TabPage();
             this.btn_keuken = new System.Windows.Forms.Button();
             this.btn_all = new System.Windows.Forms.Button();
             this.btn_bar = new System.Windows.Forms.Button();
+            this.listView1 = new System.Windows.Forms.ListView();
             this.tab_tafeloverzicht.SuspendLayout();
             this.tp_plattegrond.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_table3)).BeginInit();
@@ -214,10 +211,7 @@
             // 
             // tp_bestelling_maken
             // 
-            this.tp_bestelling_maken.Controls.Add(this.btn_bekijk_bestelling);
-            this.tp_bestelling_maken.Controls.Add(this.btn_diner);
-            this.tp_bestelling_maken.Controls.Add(this.btn_dranken);
-            this.tp_bestelling_maken.Controls.Add(this.btn_lunch);
+            this.tp_bestelling_maken.Controls.Add(this.listView1);
             this.tp_bestelling_maken.Location = new System.Drawing.Point(4, 22);
             this.tp_bestelling_maken.Name = "tp_bestelling_maken";
             this.tp_bestelling_maken.Padding = new System.Windows.Forms.Padding(3);
@@ -225,52 +219,6 @@
             this.tp_bestelling_maken.TabIndex = 1;
             this.tp_bestelling_maken.Text = "Bestelling maken";
             this.tp_bestelling_maken.UseVisualStyleBackColor = true;
-            // 
-            // btn_bekijk_bestelling
-            // 
-            this.btn_bekijk_bestelling.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_bekijk_bestelling.Location = new System.Drawing.Point(49, 412);
-            this.btn_bekijk_bestelling.Name = "btn_bekijk_bestelling";
-            this.btn_bekijk_bestelling.Size = new System.Drawing.Size(323, 67);
-            this.btn_bekijk_bestelling.TabIndex = 3;
-            this.btn_bekijk_bestelling.Text = "Bekijk bestelling";
-            this.btn_bekijk_bestelling.UseVisualStyleBackColor = true;
-            // 
-            // btn_diner
-            // 
-            this.btn_diner.BackColor = System.Drawing.Color.PeachPuff;
-            this.btn_diner.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_diner.Location = new System.Drawing.Point(49, 178);
-            this.btn_diner.Name = "btn_diner";
-            this.btn_diner.Size = new System.Drawing.Size(323, 67);
-            this.btn_diner.TabIndex = 2;
-            this.btn_diner.Text = "Diner";
-            this.btn_diner.UseVisualStyleBackColor = false;
-            // 
-            // btn_dranken
-            // 
-            this.btn_dranken.BackColor = System.Drawing.Color.PaleGreen;
-            this.btn_dranken.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_dranken.FlatAppearance.BorderSize = 3;
-            this.btn_dranken.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_dranken.Location = new System.Drawing.Point(49, 267);
-            this.btn_dranken.Name = "btn_dranken";
-            this.btn_dranken.Size = new System.Drawing.Size(323, 67);
-            this.btn_dranken.TabIndex = 1;
-            this.btn_dranken.Text = "Dranken";
-            this.btn_dranken.UseVisualStyleBackColor = false;
-            // 
-            // btn_lunch
-            // 
-            this.btn_lunch.BackColor = System.Drawing.Color.LightSalmon;
-            this.btn_lunch.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_lunch.Location = new System.Drawing.Point(49, 95);
-            this.btn_lunch.Name = "btn_lunch";
-            this.btn_lunch.Size = new System.Drawing.Size(323, 67);
-            this.btn_lunch.TabIndex = 0;
-            this.btn_lunch.Text = "Lunch";
-            this.btn_lunch.UseVisualStyleBackColor = false;
-            this.btn_lunch.Click += new System.EventHandler(this.btn_lunch_Click);
             // 
             // tp_huidige_bestellingen
             // 
@@ -320,6 +268,14 @@
             this.btn_bar.Text = "Bar";
             this.btn_bar.UseVisualStyleBackColor = false;
             // 
+            // listView1
+            // 
+            this.listView1.Location = new System.Drawing.Point(34, 117);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(121, 97);
+            this.listView1.TabIndex = 0;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            // 
             // TafelOverzicht
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -364,12 +320,9 @@
         private System.Windows.Forms.PictureBox pb_table1;
         private System.Windows.Forms.Button btn_keuken_meldingen;
         private System.Windows.Forms.Button btn_bar_meldingen;
-        private System.Windows.Forms.Button btn_bekijk_bestelling;
-        private System.Windows.Forms.Button btn_diner;
-        private System.Windows.Forms.Button btn_dranken;
-        private System.Windows.Forms.Button btn_lunch;
         private System.Windows.Forms.Button btn_keuken;
         private System.Windows.Forms.Button btn_all;
         private System.Windows.Forms.Button btn_bar;
+        private System.Windows.Forms.ListView listView1;
     }
 }
