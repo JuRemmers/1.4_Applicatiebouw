@@ -14,6 +14,7 @@ namespace DAL.DAO
 
         public BestellingDAO()
         {
+            dbconn = new DBconnection();
             conn = dbconn.GetConnection();
         }
     }
