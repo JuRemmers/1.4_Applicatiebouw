@@ -25,16 +25,21 @@ namespace DAL.DAO
         {
             try
             {
-                int ID = (int)reader["id"];
-                string bezet = (string)reader["bezet"];
+                int id = (int)reader["id"];
+                bool bezet = (bool)reader["bezet"];
 
+                return new Tafel(id, bezet);
+            }
+            catch
+            {
+                return null;
             }
         }
 
         //Haal alle tafels op
         public List<Tafel> GetAll()
         {
-            List<Tafel> tafel = new List<Tafel>();
+            List<Tafel> tafels = new List<Tafel>();
 
             conn.Open();
 
@@ -43,14 +48,14 @@ namespace DAL.DAO
 
             while (reader.Read())
             {
-                Tafel tafel = ReadBoek(reader);
-                tafel.Add(tafel);
+                Tafel tafel = ReadTafel(reader);
+                tafels.Add(tafel);
             }
 
             reader.Close();
             conn.Close();
 
-            return tafel;
+            return tafels;
         }
 
         //Haal de ID voor de tafels op
@@ -70,18 +75,28 @@ namespace DAL.DAO
             return tafel;
         }
         //Haal de status van de tafels op
-        public Tafel GetAllBezet(bool bezet)
+        public bool GetAllBezet(bool bezet)
         {
             SqlCommand command = new SqlCommand("SELECT * FROM tafel WHERE Bezet=" + bezet, conn);
             SqlDataReader reader = command.ExecuteReader();
-            string result =
+            string result = ReadTafel(reader).ToString();
 
 
-
-            if (reader = "true")
+            if (result == "true")
             {
-
+                bezet = true;
             }
+            else
+            {
+                bezet = false;
+            }
+
+            return bezet;
+        }
+
+        public string ChangeBezet()
+        {
+            SqlCommand command = new SqlCommand("");
         }
     //class TafelDAO
         // protected SqlConnection conn;
