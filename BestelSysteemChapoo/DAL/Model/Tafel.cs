@@ -8,8 +8,8 @@ namespace DAL.Model
 {
     public class Tafel
     {
-        public int ID { get; private set; }
-        public bool Bezet { get; private set; }
+        public int ID { get;set; }
+        public bool Bezet { get;set; }
 
         public Tafel(int ID, bool Bezet)
         {

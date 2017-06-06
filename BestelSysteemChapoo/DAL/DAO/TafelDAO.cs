@@ -19,6 +19,7 @@ namespace DAL.DAO
         public TafelDAO()
         {
             conn = dbconn.GetConnection();
+
         }
 
         public Tafel ReadTafel(SqlDataReader reader)
@@ -97,8 +98,9 @@ namespace DAL.DAO
         public string ChangeBezet()
         {
             SqlCommand command = new SqlCommand("");
+            return "";
         }
-    //class TafelDAO
+        //class TafelDAO
         // protected SqlConnection conn;
         // protected DBconnection dbconn;
 
@@ -106,4 +108,5 @@ namespace DAL.DAO
         // {
         //    conn = dbconn.GetConnection();
         // }
+    }
 }
