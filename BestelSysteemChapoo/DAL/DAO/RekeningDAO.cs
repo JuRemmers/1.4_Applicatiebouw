@@ -38,7 +38,7 @@ namespace DAL.DAO
 
         public void GetTafelOverzicht()
         {
-            string com = "SELECT";
+            string com = "";
             SqlCommand command = new SqlCommand(com);
         }
         
