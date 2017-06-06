@@ -18,7 +18,7 @@ namespace DAL.DAO
 
         public TafelDAO()
         {
-            conn = dbconn GetConnection();
+            conn = dbconn.GetConnection();
         }
 
         public Tafel ReadTafel(SqlDataReader reader)
@@ -83,8 +83,7 @@ namespace DAL.DAO
 
             }
         }
-    class TafelDAO
-    {
+    //class TafelDAO
         // protected SqlConnection conn;
         // protected DBconnection dbconn;
 
@@ -92,5 +91,4 @@ namespace DAL.DAO
         // {
         //    conn = dbconn.GetConnection();
         // }
-    }
 }
