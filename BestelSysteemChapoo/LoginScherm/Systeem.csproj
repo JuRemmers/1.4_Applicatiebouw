@@ -54,6 +54,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TafelOverzicht.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TafelOverzicht.Designer.cs">
+      <DependentUpon>TafelOverzicht.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="LoginScherm.resx">
       <DependentUpon>LoginScherm.cs</DependentUpon>
     </EmbeddedResource>
@@ -66,6 +72,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TafelOverzicht.resx">
+      <DependentUpon>TafelOverzicht.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
