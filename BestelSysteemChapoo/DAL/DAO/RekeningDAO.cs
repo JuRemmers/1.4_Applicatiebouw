@@ -8,5 +8,7 @@ namespace DAL.DAO
 {
     class RekeningDAO
     {
+        protected SqlConnection conn;
+        protected DBconnection dbconn;
     }
 }

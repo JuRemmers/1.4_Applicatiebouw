@@ -11,7 +11,7 @@ using System.Configuration;
 // Gemaakt door Kayleigh
 namespace DAL
 {
-    class DBconnection
+    public class DBconnection
     {
         // Database connectie wordt geïnitialiseerd
         protected SqlConnection conn;

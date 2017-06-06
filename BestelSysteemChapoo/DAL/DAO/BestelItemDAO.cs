@@ -8,5 +8,7 @@ namespace DAL.DAO
 {
     class BestelItemDAO
     {
+        protected SqlConnection conn;
+        protected DBconnection dbconn;
     }
 }
