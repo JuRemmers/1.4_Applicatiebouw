@@ -52,6 +52,11 @@
             this.btn_keuken = new System.Windows.Forms.Button();
             this.btn_all = new System.Windows.Forms.Button();
             this.btn_bar = new System.Windows.Forms.Button();
+            this.gbox_items = new System.Windows.Forms.GroupBox();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.tab_tafeloverzicht.SuspendLayout();
             this.tp_plattegrond.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_table3)).BeginInit();
@@ -66,6 +71,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb_table1)).BeginInit();
             this.tp_bestelling_maken.SuspendLayout();
             this.tp_huidige_bestellingen.SuspendLayout();
+            this.gbox_items.SuspendLayout();
             this.SuspendLayout();
             // 
             // tab_tafeloverzicht
@@ -214,6 +220,7 @@
             // 
             // tp_bestelling_maken
             // 
+            this.tp_bestelling_maken.Controls.Add(this.gbox_items);
             this.tp_bestelling_maken.Controls.Add(this.btn_bekijk_bestelling);
             this.tp_bestelling_maken.Controls.Add(this.btn_diner);
             this.tp_bestelling_maken.Controls.Add(this.btn_dranken);
@@ -320,6 +327,55 @@
             this.btn_bar.Text = "Bar";
             this.btn_bar.UseVisualStyleBackColor = false;
             // 
+            // gbox_items
+            // 
+            this.gbox_items.Controls.Add(this.button3);
+            this.gbox_items.Controls.Add(this.button2);
+            this.gbox_items.Controls.Add(this.button1);
+            this.gbox_items.Controls.Add(this.checkedListBox1);
+            this.gbox_items.Location = new System.Drawing.Point(8, 6);
+            this.gbox_items.Name = "gbox_items";
+            this.gbox_items.Size = new System.Drawing.Size(402, 547);
+            this.gbox_items.TabIndex = 4;
+            this.gbox_items.TabStop = false;
+            this.gbox_items.Text = "Menu items";
+            this.gbox_items.Visible = false;
+            // 
+            // checkedListBox1
+            // 
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Location = new System.Drawing.Point(6, 49);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.Size = new System.Drawing.Size(390, 439);
+            this.checkedListBox1.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(6, 20);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(286, 491);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(110, 50);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(321, 20);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 3;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
             // TafelOverzicht
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -342,6 +398,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb_table1)).EndInit();
             this.tp_bestelling_maken.ResumeLayout(false);
             this.tp_huidige_bestellingen.ResumeLayout(false);
+            this.gbox_items.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -371,5 +428,10 @@
         private System.Windows.Forms.Button btn_keuken;
         private System.Windows.Forms.Button btn_all;
         private System.Windows.Forms.Button btn_bar;
+        private System.Windows.Forms.GroupBox gbox_items;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.CheckedListBox checkedListBox1;
     }
 }
