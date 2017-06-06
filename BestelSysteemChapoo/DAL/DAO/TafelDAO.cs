@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Configuration;
+using DAL.Model;
 
 namespace DAL.DAO
 {
@@ -13,10 +14,21 @@ namespace DAL.DAO
     public class TafelDAO
     {
         protected SqlConnection conn;
+        protected DBconnection dbconn;
 
-        public Tafel ReadTafel()
+        public TafelDAO()
         {
-            
+            conn = dbconn GetConnection();
+        }
+
+        public Tafel ReadTafel(SqlDataReader reader)
+        {
+            try
+            {
+                int ID = (int)reader["id"];
+                string bezet = (string)reader["bezet"];
+
+            }
         }
 
         //Haal alle tafels op
@@ -62,6 +74,7 @@ namespace DAL.DAO
         {
             SqlCommand command = new SqlCommand("SELECT * FROM tafel WHERE Bezet=" + bezet, conn);
             SqlDataReader reader = command.ExecuteReader();
+            string result =
 
 
 
