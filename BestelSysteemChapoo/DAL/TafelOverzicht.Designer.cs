@@ -44,6 +44,13 @@
             this.btn_keuken_meldingen = new System.Windows.Forms.Button();
             this.btn_bar_meldingen = new System.Windows.Forms.Button();
             this.tp_bestelling_maken = new System.Windows.Forms.TabPage();
+            this.gbox_items = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.btn_bekijkbestelling = new System.Windows.Forms.Button();
+            this.btm_voegtoe = new System.Windows.Forms.Button();
+            this.btn_terug = new System.Windows.Forms.Button();
+            this.lbox_list = new System.Windows.Forms.CheckedListBox();
             this.btn_bekijk_bestelling = new System.Windows.Forms.Button();
             this.btn_diner = new System.Windows.Forms.Button();
             this.btn_dranken = new System.Windows.Forms.Button();
@@ -52,13 +59,6 @@
             this.btn_keuken = new System.Windows.Forms.Button();
             this.btn_all = new System.Windows.Forms.Button();
             this.btn_bar = new System.Windows.Forms.Button();
-            this.gbox_items = new System.Windows.Forms.GroupBox();
-            this.lbox_list = new System.Windows.Forms.CheckedListBox();
-            this.btn_terug = new System.Windows.Forms.Button();
-            this.btm_voegtoe = new System.Windows.Forms.Button();
-            this.btn_bekijkbestelling = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.tab_tafeloverzicht.SuspendLayout();
             this.tp_plattegrond.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_table3)).BeginInit();
@@ -72,8 +72,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb_table10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_table1)).BeginInit();
             this.tp_bestelling_maken.SuspendLayout();
-            this.tp_huidige_bestellingen.SuspendLayout();
             this.gbox_items.SuspendLayout();
+            this.tp_huidige_bestellingen.SuspendLayout();
             this.SuspendLayout();
             // 
             // tab_tafeloverzicht
@@ -235,6 +235,91 @@
             this.tp_bestelling_maken.Text = "Bestelling maken";
             this.tp_bestelling_maken.UseVisualStyleBackColor = true;
             // 
+            // gbox_items
+            // 
+            this.gbox_items.Controls.Add(this.label1);
+            this.gbox_items.Controls.Add(this.comboBox1);
+            this.gbox_items.Controls.Add(this.btn_bekijkbestelling);
+            this.gbox_items.Controls.Add(this.btm_voegtoe);
+            this.gbox_items.Controls.Add(this.btn_terug);
+            this.gbox_items.Controls.Add(this.lbox_list);
+            this.gbox_items.Location = new System.Drawing.Point(8, 6);
+            this.gbox_items.Name = "gbox_items";
+            this.gbox_items.Size = new System.Drawing.Size(402, 547);
+            this.gbox_items.TabIndex = 4;
+            this.gbox_items.TabStop = false;
+            this.gbox_items.Text = "Menu items";
+            this.gbox_items.Visible = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(6, 502);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(79, 29);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Aantal";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
+            this.comboBox1.Location = new System.Drawing.Point(121, 494);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(55, 45);
+            this.comboBox1.TabIndex = 4;
+            // 
+            // btn_bekijkbestelling
+            // 
+            this.btn_bekijkbestelling.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_bekijkbestelling.Location = new System.Drawing.Point(263, 12);
+            this.btn_bekijkbestelling.Name = "btn_bekijkbestelling";
+            this.btn_bekijkbestelling.Size = new System.Drawing.Size(133, 31);
+            this.btn_bekijkbestelling.TabIndex = 3;
+            this.btn_bekijkbestelling.Text = "Bekijk bestelling";
+            this.btn_bekijkbestelling.UseVisualStyleBackColor = true;
+            // 
+            // btm_voegtoe
+            // 
+            this.btm_voegtoe.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btm_voegtoe.Location = new System.Drawing.Point(182, 491);
+            this.btm_voegtoe.Name = "btm_voegtoe";
+            this.btm_voegtoe.Size = new System.Drawing.Size(214, 50);
+            this.btm_voegtoe.TabIndex = 2;
+            this.btm_voegtoe.Text = "Voeg selectie toe";
+            this.btm_voegtoe.UseVisualStyleBackColor = true;
+            // 
+            // btn_terug
+            // 
+            this.btn_terug.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_terug.Location = new System.Drawing.Point(6, 12);
+            this.btn_terug.Name = "btn_terug";
+            this.btn_terug.Size = new System.Drawing.Size(75, 31);
+            this.btn_terug.TabIndex = 1;
+            this.btn_terug.Text = "Terug";
+            this.btn_terug.UseVisualStyleBackColor = true;
+            // 
+            // lbox_list
+            // 
+            this.lbox_list.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbox_list.FormattingEnabled = true;
+            this.lbox_list.Location = new System.Drawing.Point(6, 49);
+            this.lbox_list.Name = "lbox_list";
+            this.lbox_list.Size = new System.Drawing.Size(390, 436);
+            this.lbox_list.TabIndex = 0;
+            // 
             // btn_bekijk_bestelling
             // 
             this.btn_bekijk_bestelling.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -329,99 +414,14 @@
             this.btn_bar.Text = "Bar";
             this.btn_bar.UseVisualStyleBackColor = false;
             // 
-            // gbox_items
-            // 
-            this.gbox_items.Controls.Add(this.label1);
-            this.gbox_items.Controls.Add(this.comboBox1);
-            this.gbox_items.Controls.Add(this.btn_bekijkbestelling);
-            this.gbox_items.Controls.Add(this.btm_voegtoe);
-            this.gbox_items.Controls.Add(this.btn_terug);
-            this.gbox_items.Controls.Add(this.lbox_list);
-            this.gbox_items.Location = new System.Drawing.Point(8, 6);
-            this.gbox_items.Name = "gbox_items";
-            this.gbox_items.Size = new System.Drawing.Size(402, 547);
-            this.gbox_items.TabIndex = 4;
-            this.gbox_items.TabStop = false;
-            this.gbox_items.Text = "Menu items";
-            this.gbox_items.Visible = false;
-            // 
-            // lbox_list
-            // 
-            this.lbox_list.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbox_list.FormattingEnabled = true;
-            this.lbox_list.Location = new System.Drawing.Point(6, 49);
-            this.lbox_list.Name = "lbox_list";
-            this.lbox_list.Size = new System.Drawing.Size(390, 439);
-            this.lbox_list.TabIndex = 0;
-            // 
-            // btn_terug
-            // 
-            this.btn_terug.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_terug.Location = new System.Drawing.Point(6, 12);
-            this.btn_terug.Name = "btn_terug";
-            this.btn_terug.Size = new System.Drawing.Size(75, 31);
-            this.btn_terug.TabIndex = 1;
-            this.btn_terug.Text = "Terug";
-            this.btn_terug.UseVisualStyleBackColor = true;
-            // 
-            // btm_voegtoe
-            // 
-            this.btm_voegtoe.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btm_voegtoe.Location = new System.Drawing.Point(182, 491);
-            this.btm_voegtoe.Name = "btm_voegtoe";
-            this.btm_voegtoe.Size = new System.Drawing.Size(214, 50);
-            this.btm_voegtoe.TabIndex = 2;
-            this.btm_voegtoe.Text = "Voeg selectie toe";
-            this.btm_voegtoe.UseVisualStyleBackColor = true;
-            // 
-            // btn_bekijkbestelling
-            // 
-            this.btn_bekijkbestelling.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_bekijkbestelling.Location = new System.Drawing.Point(263, 12);
-            this.btn_bekijkbestelling.Name = "btn_bekijkbestelling";
-            this.btn_bekijkbestelling.Size = new System.Drawing.Size(133, 31);
-            this.btn_bekijkbestelling.TabIndex = 3;
-            this.btn_bekijkbestelling.Text = "Bekijk bestelling";
-            this.btn_bekijkbestelling.UseVisualStyleBackColor = true;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"});
-            this.comboBox1.Location = new System.Drawing.Point(121, 494);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(55, 45);
-            this.comboBox1.TabIndex = 4;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(6, 502);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 29);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Aantal";
-            // 
-            // TafelOverzicht
+            // Jesseiscool
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(426, 588);
             this.Controls.Add(this.tab_tafeloverzicht);
-            this.Name = "TafelOverzicht";
-            this.Text = "TafelOverzicht";
+            this.Name = "Jesseiscool";
+            this.Text = "Jesse is cool";
             this.tab_tafeloverzicht.ResumeLayout(false);
             this.tp_plattegrond.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pb_table3)).EndInit();
@@ -435,9 +435,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb_table10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_table1)).EndInit();
             this.tp_bestelling_maken.ResumeLayout(false);
-            this.tp_huidige_bestellingen.ResumeLayout(false);
             this.gbox_items.ResumeLayout(false);
             this.gbox_items.PerformLayout();
+            this.tp_huidige_bestellingen.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
