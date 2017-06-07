@@ -11,7 +11,6 @@ namespace DAL.Logica
     {
         public List<Bestelling> GetAllForKaart(string kaart)
         {
-
         }
     }
 }
