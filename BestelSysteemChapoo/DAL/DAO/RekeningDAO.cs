@@ -36,18 +36,22 @@ namespace DAL.DAO
             conn.Close();
         }
 
-        public void GetTafelOverzicht(int tafelId)
+        //public void GetTafelOverzicht(int tafelId)
+        //{
+        //    List<> tafeloverzicht = new List<>;
+        //    string com = "SELECT Bestelling WHERE Tafel_ID=@id ";
+        //    SqlCommand command = new SqlCommand(com);
+        //    command.Parameters.AddWithValue("@id", tafelId);
+        //    conn.Open();
+        //}
+        
+        public void GetRekeningById(int tafelId)
         {
-            string com = "SELECT Bestelling WHERE Tafel_ID=@id ";
+            List<> Rekening = new List<>;
+            string com = "SELECT Bestelling WHERE Tafel_ID=@id";
             SqlCommand command = new SqlCommand(com);
             command.Parameters.AddWithValue("@id", tafelId);
             conn.Open();
-        }
-        
-        public void GetRekeningById()
-        {
-            string com = "";
-            SqlCommand command = new SqlCommand(com);
         }
 
         public void GetAll()
