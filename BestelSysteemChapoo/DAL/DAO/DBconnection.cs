@@ -3,15 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data;
 using System.Data.SqlClient;
-using System.Data.SqlTypes;
 using System.Configuration;
 
-// Gemaakt door Kayleigh
-namespace DAL
+namespace DAL.DAO
 {
-    public class DBconnection
+    class DBconnection
     {
         // Database connectie wordt geïnitialiseerd
         protected SqlConnection conn;
