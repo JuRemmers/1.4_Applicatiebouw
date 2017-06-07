@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace DAL.Model
 {
-    // door Donna
-    public enum Functie { Bar, Bediening, Keuken, Beheer }
+    enum Menu_Categorie
+    {
+        Voorgerecht, Tussengerecht, Hoofdgerecht, Nagerecht, Bier, Wijn, GedistilleerdeDrank, KoffieThee
+    }
 }
