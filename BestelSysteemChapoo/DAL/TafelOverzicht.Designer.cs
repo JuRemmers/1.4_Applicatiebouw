@@ -45,9 +45,11 @@
             this.btn_bar_meldingen = new System.Windows.Forms.Button();
             this.tp_bestelling_maken = new System.Windows.Forms.TabPage();
             this.gbox_items = new System.Windows.Forms.GroupBox();
+            this.btn_aantal = new System.Windows.Forms.DomainUpDown();
+            this.label1 = new System.Windows.Forms.Label();
             this.btn_Bekijk = new System.Windows.Forms.Button();
             this.btn_add = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_terug = new System.Windows.Forms.Button();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.btn_bekijk_bestelling = new System.Windows.Forms.Button();
             this.btn_diner = new System.Windows.Forms.Button();
@@ -57,8 +59,6 @@
             this.btn_keuken = new System.Windows.Forms.Button();
             this.btn_all = new System.Windows.Forms.Button();
             this.btn_bar = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btn_aantal = new System.Windows.Forms.DomainUpDown();
             this.tab_tafeloverzicht.SuspendLayout();
             this.tp_plattegrond.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_table3)).BeginInit();
@@ -242,7 +242,7 @@
             this.gbox_items.Controls.Add(this.label1);
             this.gbox_items.Controls.Add(this.btn_Bekijk);
             this.gbox_items.Controls.Add(this.btn_add);
-            this.gbox_items.Controls.Add(this.button1);
+            this.gbox_items.Controls.Add(this.btn_terug);
             this.gbox_items.Controls.Add(this.checkedListBox1);
             this.gbox_items.Location = new System.Drawing.Point(8, 6);
             this.gbox_items.Name = "gbox_items";
@@ -252,6 +252,24 @@
             this.gbox_items.Text = "Menu items";
             this.gbox_items.Visible = false;
             this.gbox_items.Enter += new System.EventHandler(this.gbox_items_Enter);
+            // 
+            // btn_aantal
+            // 
+            this.btn_aantal.Location = new System.Drawing.Point(67, 508);
+            this.btn_aantal.Name = "btn_aantal";
+            this.btn_aantal.Size = new System.Drawing.Size(120, 20);
+            this.btn_aantal.TabIndex = 5;
+            this.btn_aantal.Text = "1";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(6, 506);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(55, 20);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Aantal";
             // 
             // btn_Bekijk
             // 
@@ -273,15 +291,15 @@
             this.btn_add.Text = "Voeg selectie toe";
             this.btn_add.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btn_terug
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(6, 14);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 31);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Terug";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_terug.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_terug.Location = new System.Drawing.Point(6, 14);
+            this.btn_terug.Name = "btn_terug";
+            this.btn_terug.Size = new System.Drawing.Size(75, 31);
+            this.btn_terug.TabIndex = 1;
+            this.btn_terug.Text = "Terug";
+            this.btn_terug.UseVisualStyleBackColor = true;
             // 
             // checkedListBox1
             // 
@@ -385,24 +403,6 @@
             this.btn_bar.Text = "Bar";
             this.btn_bar.UseVisualStyleBackColor = false;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(6, 506);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 20);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Aantal";
-            // 
-            // btn_aantal
-            // 
-            this.btn_aantal.Location = new System.Drawing.Point(67, 506);
-            this.btn_aantal.Name = "btn_aantal";
-            this.btn_aantal.Size = new System.Drawing.Size(120, 20);
-            this.btn_aantal.TabIndex = 5;
-            this.btn_aantal.Text = "1";
-            // 
             // Jesseiscool
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -459,7 +459,7 @@
         private System.Windows.Forms.GroupBox gbox_items;
         private System.Windows.Forms.Button btn_Bekijk;
         private System.Windows.Forms.Button btn_add;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_terug;
         private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.DomainUpDown btn_aantal;
         private System.Windows.Forms.Label label1;

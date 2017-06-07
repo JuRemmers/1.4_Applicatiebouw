@@ -14,8 +14,5 @@ namespace DAL.Model
         private Tafel tafel;
         private Medewerker medewerker;
         private DateTime datumTijd;
-        
-        public enum Status { Opgenomen, Onderhande, Gereed, Uitgeserveerd}
-
     }
 }

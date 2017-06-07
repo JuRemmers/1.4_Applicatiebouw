@@ -76,7 +76,9 @@
       <DependentUpon>LoginScherm.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\Bestelling.cs" />
+    <Compile Include="Model\Functie.cs" />
     <Compile Include="Model\Medewerker.cs" />
+    <Compile Include="Model\Status.cs" />
     <Compile Include="Model\Tafel.cs" />
     <Compile Include="Model\Tafeloverzicht.cs" />
     <Compile Include="Program.cs" />
