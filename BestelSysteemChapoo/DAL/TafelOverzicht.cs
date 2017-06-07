@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DAL
 {
-    public partial class TafelOverzicht : Form
+    public partial class Jesseiscool : Form
     {
-        public TafelOverzicht()
+        public Jesseiscool()
         {
             InitializeComponent();
         }
