@@ -8,6 +8,10 @@ namespace DAL.Model
 {
     class Medewerker
     {
-
+        private int ID;
+        private string voornaam;
+        private string achternaam;
+        private Functie functie;
+        private string wachtwoord;
     }
 }
