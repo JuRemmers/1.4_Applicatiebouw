@@ -1,6 +1,6 @@
 ﻿namespace LoginScherm
 {
-    partial class TafelOverzicht
+    partial class Jesseiscool
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TafelOverzicht));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Jesseiscool));
             this.tab_tafeloverzicht = new System.Windows.Forms.TabControl();
             this.tp_plattegrond = new System.Windows.Forms.TabPage();
             this.pb_table3 = new System.Windows.Forms.PictureBox();
@@ -217,6 +217,7 @@
             this.btn_bar_meldingen.TabIndex = 0;
             this.btn_bar_meldingen.Text = "Bar meldingen";
             this.btn_bar_meldingen.UseVisualStyleBackColor = true;
+            this.btn_bar_meldingen.Click += new System.EventHandler(this.btn_bar_meldingen_Click);
             // 
             // tp_bestelling_maken
             // 
