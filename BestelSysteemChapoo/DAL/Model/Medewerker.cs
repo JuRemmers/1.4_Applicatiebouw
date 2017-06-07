@@ -8,6 +8,7 @@ namespace DAL.Model
 {
     class Medewerker
     {
+        // door Donna
         private int ID;
         private string voornaam;
         private string achternaam;

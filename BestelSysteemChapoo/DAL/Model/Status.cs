@@ -6,5 +6,6 @@ using System.Threading.Tasks;
 
 namespace DAL.Model
 {
+    // door Donna
     public enum Status { Opgenomen, Onderhande, Gereed, Uitgeserveerd }
 }

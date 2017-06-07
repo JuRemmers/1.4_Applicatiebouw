@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace DAL.Model
 {
-    // door Donna
-    public enum Functie { Bar, Bediening, Keuken, Beheer }
+    enum Kaart
+    {
+        Lunch, Diner, Drank
+    }
 }
