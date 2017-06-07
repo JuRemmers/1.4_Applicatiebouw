@@ -14,6 +14,7 @@ namespace DAL.DAO
 
         public MenuItemDAO()
         {
+            dbconn = new DBconnection();
             conn = dbconn.GetConnection();
         }
     }

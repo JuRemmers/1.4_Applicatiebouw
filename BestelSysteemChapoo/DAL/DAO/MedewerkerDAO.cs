@@ -14,6 +14,7 @@ namespace DAL.DAO
 
         public MedewerkerDAO()
         {
+            dbconn = new DBconnection();
             conn = dbconn.GetConnection();
         }
     }

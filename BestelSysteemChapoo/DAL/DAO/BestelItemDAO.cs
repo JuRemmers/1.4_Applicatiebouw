@@ -14,6 +14,7 @@ namespace DAL.DAO
 
         public BestelItemDAO()
         {
+            dbconn = new DBconnection();
             conn = dbconn.GetConnection();
         }
     }
