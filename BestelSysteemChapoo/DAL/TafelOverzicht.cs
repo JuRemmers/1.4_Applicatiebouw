@@ -21,5 +21,10 @@ namespace DAL
         {
 
         }
+
+        private void btn_bar_meldingen_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
