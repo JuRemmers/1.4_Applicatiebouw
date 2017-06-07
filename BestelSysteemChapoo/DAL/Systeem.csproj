@@ -67,7 +67,7 @@
     <Compile Include="DAO\MenuItemDAO.cs" />
     <Compile Include="DAO\RekeningDAO.cs" />
     <Compile Include="DAO\TafelDAO.cs" />
-    <Compile Include="DBconnection.cs" />
+    <Compile Include="DAO\DBconnection.cs" />
     <Compile Include="LoginScherm.cs">
       <SubType>Form</SubType>
     </Compile>
