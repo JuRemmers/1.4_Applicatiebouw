@@ -18,9 +18,18 @@ namespace DAL.Model
         public string opmerking;
         public bool betaald;
 
-        public Tafeloverzicht()
+        public Tafeloverzicht(int btwL, int btwH, int totaal, int tip,DateTime time, string naam, string comment, bool pay)
         {
-            
+            btwLaag = btwL;
+            btwHoog = btwH;
+            totaalPrijs = totaal;
+            fooi = tip;
+            datumTijd = time;
+            medewerker = naam;
+            opmerking = comment;
+            betaald = pay;
         }
+
+
     }
 }

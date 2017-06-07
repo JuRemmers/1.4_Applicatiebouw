@@ -23,7 +23,7 @@ namespace DAL.DAO
         public void UpdateTip(int id, int fooi)
         {
             // creeër command
-            string com = "UPDATE Rekening SET Fooi=@fooi  WHERE ID=@id";
+            string com = "UPDATE Rekening SET Fooi = @fooi  WHERE ID = @id";
             SqlCommand command = new SqlCommand(com,conn);
 
             // Addwithvalue omdat dat minder code schrijven is, kan direct de waarde toevoegen.
@@ -36,10 +36,12 @@ namespace DAL.DAO
             conn.Close();
         }
 
-        public void GetTafelOverzicht()
+        public void GetTafelOverzicht(int tafelId)
         {
-            string com = "";
+            string com = "SELECT Bestelling WHERE Tafel_ID=@id ";
             SqlCommand command = new SqlCommand(com);
+            command.Parameters.AddWithValue("@id", tafelId);
+            conn.Open();
         }
         
         public void GetRekeningById()

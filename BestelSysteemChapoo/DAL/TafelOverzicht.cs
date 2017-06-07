@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace LoginScherm
+namespace DAL
 {
     public partial class Jesseiscool : Form
     {
@@ -19,10 +19,17 @@ namespace LoginScherm
 
         private void btn_lunch_Click(object sender, EventArgs e)
         {
+            gbox_items.Visible = true;
+
 
         }
 
         private void btn_bar_meldingen_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gbox_items_Enter(object sender, EventArgs e)
         {
 
         }
