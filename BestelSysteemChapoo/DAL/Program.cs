@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DAL.DAO;
 
 namespace DAL
 {
@@ -11,7 +10,8 @@ namespace DAL
     {
         static void Main(string[] args)
         {
-
+            Jesseiscool form = new Jesseiscool();
+            form.ShowDialog();
         }
     }
 }
