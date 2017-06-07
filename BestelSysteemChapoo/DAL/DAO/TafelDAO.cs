@@ -11,7 +11,7 @@ namespace DAL.DAO
 {
 
     //Gemaakt door Julian Remmers
-    public class TafelDAO
+    class TafelDAO
     {
         protected SqlConnection conn;
         protected DBconnection dbconn;

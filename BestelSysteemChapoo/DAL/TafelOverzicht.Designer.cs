@@ -55,8 +55,6 @@
             this.gbox_items = new System.Windows.Forms.GroupBox();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.tab_tafeloverzicht.SuspendLayout();
             this.tp_plattegrond.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_table3)).BeginInit();
@@ -281,7 +279,6 @@
             // 
             // tp_huidige_bestellingen
             // 
-            this.tp_huidige_bestellingen.Controls.Add(this.gb_barbestelling);
             this.tp_huidige_bestellingen.Controls.Add(this.btn_keuken);
             this.tp_huidige_bestellingen.Controls.Add(this.btn_all);
             this.tp_huidige_bestellingen.Controls.Add(this.btn_bar);
@@ -326,28 +323,8 @@
             this.btn_bar.Size = new System.Drawing.Size(323, 67);
             this.btn_bar.TabIndex = 4;
             this.btn_bar.Text = "Bar";
-            this.btn_bar.UseVisualStyleBackColor = false;
-            // 
-            // gb_barbestelling
-            // 
-            this.gb_barbestelling.Controls.Add(this.checkedListBox2);
-            this.gb_barbestelling.ForeColor = System.Drawing.Color.Black;
-            this.gb_barbestelling.Location = new System.Drawing.Point(3, 6);
-            this.gb_barbestelling.Name = "gb_barbestelling";
-            this.gb_barbestelling.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.gb_barbestelling.Size = new System.Drawing.Size(409, 555);
-            this.gb_barbestelling.TabIndex = 7;
-            this.gb_barbestelling.TabStop = false;
-            this.gb_barbestelling.Text = "Huidige Bestellingen - Bar";
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(321, 20);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btn_bar.UseVisualStyleBackColor = false; 
+          
             // 
             // Jesseiscool
             // 
