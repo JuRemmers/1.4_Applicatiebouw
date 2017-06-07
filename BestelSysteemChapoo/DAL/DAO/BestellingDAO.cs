@@ -19,6 +19,8 @@ namespace DAL.DAO
             conn = dbconn.GetConnection();
         }
 
-        public List<Bestelling> GetAllForKaart(string)
+        //public List<Bestelling> GetAllForKaart(string booperdooper)
+        //{
+        //}
     }
 }

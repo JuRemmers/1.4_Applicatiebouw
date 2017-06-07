@@ -9,8 +9,8 @@ namespace DAL.Logica
 {
     class BestellingService
     {
-        public List<Bestelling> GetAllForKaart(string kaart)
-        {
-        }
+        //public List<Bestelling> GetAllForKaart(string kaart)
+        //{
+        //}
     }
 }
